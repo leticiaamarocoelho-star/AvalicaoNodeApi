@@ -1,7 +1,7 @@
 const filme = [
     { Titulo: "Patrulha Canina", Classificacao: 3 , Descricao: "Infantil", Lancado: "Sim" },
     { Titulo: "Velozes e Furiosos", Classificacao: 12, Descricao: "Acao", Lancado: "Nao" },
-    { Titulo: "A invocacao", Classificacao: 18, Descricao: "Terror", Lancado: "Sim" },
+    { Titulo: "A invocacao do Mal", Classificacao: 18, Descricao: "Terror", Lancado: "Sim" },
     { Titulo: "Rei de Porcelana", Classificacao: 14, Descricao: "Romance", Lancado: "Nao" }
 ]
 
