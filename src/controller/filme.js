@@ -65,8 +65,22 @@ class ControllerFilme {
             res.send({ menssagem: error.menssagem })
         }
     }
+    
+    Update(id, Lancado ) {
+        const LancadoAlterar = Lancado.Update(id)
 
+        if(!LancadoAlterar) {
+            throw new Error("Filme não encontrado")
+        }
+
+        LancadoAlterar.Lancado = Lancado || LancadoAlterar.Lancado
+        
+        LancadoAlterar.save()
+    }
     
 }
+
+
+
 
 export default new ControllerFilme()

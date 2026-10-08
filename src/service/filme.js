@@ -38,6 +38,15 @@ class ServiceFilme {
         Filme.Deletar(id)
     }
 
+
+    Update(id, novosDados) {
+    const LancadoAlterar = LancadoAlterar.Update(id); 
+    if (!LancadoAlterar) {
+        throw new Error("Filme não encontrado");
+    }
+    LancadoAlterar.Lancado = novosDados.Lancado || LancadoAlterar.Lancado;
+    }
+
 }
 
 export default new ServiceFilme()
